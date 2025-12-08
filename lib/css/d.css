@@ -1,0 +1,80 @@
+/* Amélioration du Mode Sombre */
+
+/* Transitions pour une expérience fluide entre les modes */
+body, .result-box, .navbar, .modal-content, .card, .bg-white, .bg-light, .bg-dark, .section-title {
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Style principal du mode sombre */
+body.dark-mode {
+    background-color: #121212; /* Un noir profond pour le fond */
+    color: #e0e0e0; /* Un gris clair doux pour le texte, moins agressif que le blanc pur */
+}
+
+/* Styles pour les conteneurs et boîtes dans le mode sombre */
+.dark-mode .result-box {
+    background-color: #1e1e1e !important; /* Un gris très foncé pour les cartes, se différenciant du fond */
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05); /* Ombre pour la profondeur et un effet de lumière subtil */
+}
+
+.dark-mode .bg-white {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .navbar-brand h2, .dark-mode .nav-link, .dark-mode .text-white {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #e0e0e0;
+}
+
+.dark-mode .shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+.dark-mode .text-muted {
+    color: #a0a0a0 !important; /* Un gris légèrement plus clair pour les textes secondaires */
+}
+
+.dark-mode .bg-light, .dark-mode .team-item {
+    background-color: #2a2a2a !important; /* Une nuance de gris différente pour les éléments secondaires */
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .modal-content {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #333 !important; /* Une bordure subtile */
+}
+
+.dark-mode .modal-header, .dark-mode .modal-footer {
+    border-color: #333 !important;
+}
+
+.dark-mode .bg-dark {
+    background-color: #1e1e1e !important;
+}
+
+.dark-mode .footer-menu a {
+    color: #a0a0a0 !important;
+}
+
+.dark-mode .footer-menu a:hover {
+    color: #fff !important; /* Un blanc pur pour le survol, pour un meilleur contraste */
+}
+
+.dark-mode .section-title {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0;
+}
+
+/* Couleur d'accentuation pour les titres et les éléments importants */
+.dark-mode .t,
+.dark-mode .blue-text { /* Ajout d'une nouvelle classe pour cibler le texte bleu */
+    color: #fce205 !important; /* Une nuance de jaune vif pour un contraste élevé */
+}
